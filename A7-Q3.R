@@ -1,0 +1,7 @@
+x = seq(-6,6,by = 0.01)
+df = c(1,4,10,30)
+z = dt(x,df[x])
+plot(x,dt(x,df[1]),type="l",lwd=2,col="orange",ylim=c(0,0.4),xlab="x",ylab="Density")
+lines(x,dt(x,df[2]),col="red",lwd=2,lty=2)
+lines(x,dt(x,df[3]),col="green",lwd=2,lty=3)
+lines(x,dt(x,df[4]),col="blue",lwd=2,lty=4)
